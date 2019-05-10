@@ -14,5 +14,10 @@ module.exports = {
 			// TypeScript をコンパイルする
 			use: "ts-loader"
 		}]
+	},
+	devServer: {
+		contentBase: path.join(__dirname, 'dist'),
+		inline: true,
+		host: "0.0.0.0"
 	}
 };
