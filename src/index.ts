@@ -2,7 +2,6 @@ import * as JWF from 'javascript-window-framework'
 //ページ読み込み時に実行する処理を設定
 addEventListener("DOMContentLoaded", Main)
 
-
 function Main() {
 	Sample001()
 	Sample002()

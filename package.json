@@ -1,23 +1,24 @@
 {
-  "name": "jwf_sample01",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "npx webpack-dev-server"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "javascript-window-framework": "0.0.1"
-  },
-  "devDependencies": {
-    "ts-loader": "^6.0.0",
-    "typescript": "^3.4.5",
-    "webpack": "^4.31.0",
-    "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.3.1"
-  }
+	"name": "jwf_sample01",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "npx webpack-dev-server",
+		"build": "npx webpack"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"javascript-window-framework": "0.0.3"
+	},
+	"devDependencies": {
+		"ts-loader": "^6.0.0",
+		"typescript": "^3.4.5",
+		"webpack": "^4.31.0",
+		"webpack-cli": "^3.3.2",
+		"webpack-dev-server": "^3.3.1"
+	}
 }
