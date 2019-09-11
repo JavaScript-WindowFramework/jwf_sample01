@@ -8,16 +8,25 @@
 		"start": "npx webpack-dev-server",
 		"build": "npx webpack"
 	},
-	"keywords": ["JWF"],
+	"keywords": [
+		"JWF"
+	],
 	"author": "",
 	"license": "MIT",
 	"dependencies": {
-		"javascript-window-framework": "0.0.6"
+		"javascript-window-framework": "0.0.9"
 	},
 	"devDependencies": {
+		"css-loader": "^2.1.1",
+		"dts-bundle": "^0.7.3",
+		"node-sass": "^4.12.0",
+		"sass-loader": "^7.1.0",
+		"source-map-loader": "^0.2.4",
+		"style-loader": "^0.23.1",
 		"ts-loader": "^6.0.1",
 		"typescript": "^3.4.5",
-		"webpack": "^4.31.0",
+		"url-loader": "^1.1.2",
+		"webpack": "^4.32.2",
 		"webpack-cli": "^3.3.2",
 		"webpack-dev-server": "^3.4.1"
 	}

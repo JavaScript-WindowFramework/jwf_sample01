@@ -7,17 +7,35 @@ module.exports = {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'dist')
 	},
+	devtool: 'source-map',
 	module: {
 		rules: [{
-			// 拡張子 .ts の場合
-			test: /\.ts$/,
-			// TypeScript をコンパイルする
-			use: "ts-loader"
-		}]
+				test: /\.js$/,
+				use: ["source-map-loader"],
+				enforce: "pre"
+			},
+			{
+				test: /\.ts|\.tsx$/,
+				use: 'ts-loader'
+			}, {
+				test: /\.(scss|css)$/,
+				use: [
+					'style-loader',
+					'css-loader',
+					'sass-loader'
+				]
+			}, {
+				test: /\.(jpeg|jpg|png|svg|gif)$/,
+				loaders: 'url-loader'
+			},
+		]
+	},
+	resolve: {
+		extensions: ['.ts', '.js', '.scss', '.sass', '.jpeg', '.jpg', '.png', '.svg', '.gif'],
+		moduleExtensions: ['node_modules']
 	},
 	devServer: {
 		contentBase: path.join(__dirname, 'dist'),
-		inline: true,
-		host: "0.0.0.0"
-	}
+		host: "localhost"
+	},
 };
